@@ -1,9 +1,11 @@
 # Vue 3 + TypeScript + Vite
 
 ### vue3 使用路由及配置 vite.alias 简化导入写化：
-   1、安装 @type/node 
+   ```1、安装 @type/node 
       cnpm i @type/node
-   2、修改 vite.config.ts
+   ```
+   
+   ```2、修改 vite.config.ts
       2.1 引入
          import path from 'path'
 
@@ -23,11 +25,12 @@
                "@/*": ["./src/*"]  // 格式一定要写对符号*不能少不然找不到@或者没有代码提示
             }
          } 
-
+   ```
 ### 安装 sass
-   1、安装 sass、sass-loader
+   ```1、安装``` sass、sass-loader
       cnpm i sass sass-loader
-   2、在 vite.config.js 配置 scss 全局变量
+   ```
+   ```2、在 vite.config.js 配置 scss 全局变量
       css: {
          preprocessorOptions: {
             scss: {
@@ -35,28 +38,4 @@
             }
          }
       }
-
-
-
-
-
-      {
-  "semi": true,
-  "endOfLine": "auto",
-  "singleQuote": true,
-  "trailingComma": "none",
-  "bracketSpacing": true,
-  "jsxBracketSameLine": false,
-  "vueIndentScriptAndStyle": false,
-  "jsxBracketSameLine:": true,
-  "htmlWhitespaceSensitivity": "ignore",
-  "wrapAttributes": true,
-  "overrides": [
-    {
-      "files": "*.html",
-      "options": {
-        "parser": "html"
-      }
-    }
-  ]
-}
+   ```
