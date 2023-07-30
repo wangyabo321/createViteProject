@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'my-font1';
+  /* src引入需要精简的ttf字体文件 */
+  src: url('./font/font1.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'my-font2';
+  /* src引入需要精简的ttf字体文件 */
+  src: url('./font/font2.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'my-font3';
+  /* src引入需要精简的ttf字体文件 */
+  src: url('./font/font3.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.myFont1 {
+  font-family: 'my-font1';
+  font-size: 40px;
+}
+
+.myFont2 {
+  font-family: 'my-font2';
+  font-size: 40px;
+}
+
+.myFont3 {
+  font-family: 'my-font3';
+  font-size: 40px;
+}
