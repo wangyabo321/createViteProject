@@ -7,8 +7,6 @@ import Components from 'unplugin-vue-components/vite';
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
 import Inspect from 'vite-plugin-inspect';
 import path from 'path';
-import eslintPlugin from 'vite-plugin-eslint';
-
 
 export default defineConfig({
   resolve: {
@@ -65,11 +63,6 @@ export default defineConfig({
 
     Icons({
       autoInstall: true
-    }),
-    eslintPlugin({
-      include: ['src/**/*.js', 'src/**/*.vue', 'src/**/*.jsx', 'src/**/*.ts'],
-      exclude: ['./node_modules/**'],
-      cache: false
     }),
     Inspect()
   ],
